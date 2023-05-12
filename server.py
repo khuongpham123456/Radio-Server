@@ -17,6 +17,10 @@ store = Store()
 
 headers = {'Content-Type: audio/mpeg'}
 
+@app.route("/", methods=['GET'])
+def hello_world():
+    return "Hello World !"
+
 
 @app.route("/uploads", methods=['POST'])
 def upload_file():
